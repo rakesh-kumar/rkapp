@@ -690,9 +690,9 @@ ul.icon1 {
 .icon1 li:hover > a {
 	color: #fafafa;
 }
-*html .icon1 li a:hover { /* IE6 only */
+/**html .icon1 li a:hover { 
 	color: #fafafa;
-}
+}*/
 .icon1 ul {
 	width:300px;
 	margin: 20px 0 0 0;
