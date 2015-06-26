@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Gretong a Ecommerce Category Flat Bootstarp Responsive Website Template | Home :: w3layouts</title>
+<title>Gretong a Ecommerce Category Flat Bootstarp Responsive Website Template | Register :: w3layouts</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary JavaScript plugins) -->
 <script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
@@ -27,7 +27,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <script src="js/menu_jquery.js"></script>
-<script src="js/simpleCart.min.js"> </script>
 </head>
 <body>
 <!-- header_top -->
@@ -42,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div class="top_left">
-				<h2><span></span> Call us : 000 0000 000</h2>
+				<h2><span></span> Call us : 032 2352 782</h2>
 			</div>
 				<div class="clearfix"> </div>
 		</div>
@@ -54,7 +53,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="header">
 	<div class="head-t">
 		<div class="logo">
-			<a href="/"><%=image_tag("zeeozoo5.png", class: "img-responsive")%></a>
+			<a href="index.html"><%=image_tag("zeeozoo5.png", class: "img-responsive")%> </a>
 		</div>
 		<!-- start header_right -->
 		<div class="header_right">
@@ -87,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			<div class="cart box_1">
 				<a href="checkout.html">
-					<h3> <span class="simpleCart_total">$0.00</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)<%=image_tag("bag.png") %></h3>
+					<h3> <span class="simpleCart_total">$0.00</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)<img src="images/bag.png" alt=""></h3>
 				</a>	
 				<p><a href="javascript:;" class="simpleCart_empty">(empty card)</a></p>
 				<div class="clearfix"> </div>
@@ -108,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="clearfix"> </div>
 	</div>
 		<!-- start header menu -->
-		<ul class="megamenu skyblue">
+			<ul class="megamenu skyblue">
 			<li class="active grid"><a class="color1" href="index.html">Home</a></li>
 			<li class="grid"><a class="color2" href="#">new arrivals</a>
 				<div class="megapanel">
@@ -753,117 +752,134 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 </div>
-<div class="arriv">
-	<div class="container">
-		<div class="arriv-top">
-			<div class="col-md-6 arriv-left">
-				<%=image_tag("1.jpg", class: "img-responsive")%>
-				<div class="arriv-info">
-					<h3>NEW ARRIVALS</h3>
-					<p>REVIVE YOUR WARDROBE WITH CHIC KNITS</p>
-					<div class="crt-btn">
-						<a href="/details">TAKE A LOOK</a>
+<!-- content -->
+<div class="container">
+<div class="main">
+	<!-- start registration -->
+	<div class="registration">
+		<div class="registration_left">
+		<h2>new user? <span> create an account </span></h2>
+		<!-- [if IE] 
+		    < link rel='stylesheet' type='text/css' href='ie.css'/>  
+		 [endif] -->  
+		  
+		<!-- [if lt IE 7]>  
+		    < link rel='stylesheet' type='text/css' href='ie6.css'/>  
+		<! [endif] -->  
+		<script>
+			(function() {
+		
+			// Create input element for testing
+			var inputs = document.createElement('input');
+			
+			// Create the supports object
+			var supports = {};
+			
+			supports.autofocus   = 'autofocus' in inputs;
+			supports.required    = 'required' in inputs;
+			supports.placeholder = 'placeholder' in inputs;
+		
+			// Fallback for autofocus attribute
+			if(!supports.autofocus) {
+				
+			}
+			
+			// Fallback for required attribute
+			if(!supports.required) {
+				
+			}
+		
+			// Fallback for placeholder attribute
+			if(!supports.placeholder) {
+				
+			}
+			
+			// Change text inside send button on submit
+			var send = document.getElementById('register-submit');
+			if(send) {
+				send.onclick = function () {
+					this.innerHTML = '...Sending';
+				}
+			}
+		
+		})();
+		</script>
+		 <div class="registration_form">
+		 <!-- Form -->
+			<form id="registration_form" action="contact.php" method="post">
+				<div>
+					<label>
+						<input placeholder="first name:" type="text" tabindex="1" required autofocus>
+					</label>
+				</div>
+				<div>
+					<label>
+						<input placeholder="last name:" type="text" tabindex="2" required autofocus>
+					</label>
+				</div>
+				<div>
+					<label>
+						<input placeholder="email address:" type="email" tabindex="3" required>
+					</label>
+				</div>
+				<div class="sky-form">
+					<div class="sky_form1">
+						<ul>
+							<li><label class="radio left"><input type="radio" name="radio" checked=""><i></i>Male</label></li>
+							<li><label class="radio"><input type="radio" name="radio"><i></i>Female</label></li>
+							<div class="clearfix"></div>
+						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-6 arriv-right">
-				<%=image_tag("2.jpg", class: "img-responsive")%>
-				<div class="arriv-info">
-					<h3>TUXEDO</h3>
-					<p>REVIVE YOUR WARDROBE WITH CHIC KNITS</p>
-					<div class="crt-btn">
-						<a href="/details">SHOP NOW</a>
-					</div>
+				<div>
+					<label>
+						<input placeholder="password" type="password" tabindex="4" required>
+					</label>
+				</div>						
+				<div>
+					<label>
+						<input placeholder="retype password" type="password" tabindex="4" required>
+					</label>
+				</div>	
+				<div>
+					<input type="submit" value="create an account" id="register-submit">
 				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="arriv-bottm">
-			<div class="col-md-8 arriv-left1">
-				<%=image_tag("3.jpg", class: "img-responsive")%>
-				<div class="arriv-info1">
-					<h3>SWEATER</h3>
-					<p>REVIVE YOUR WARDROBE WITH CHIC KNITS</p>
-					<div class="crt-btn">
-						<a href="/details">SHOP NOW</a>
-					</div>
+				<div class="sky-form">
+					<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>i agree to shoppe.com &nbsp;<a class="terms" href="#"> terms of service</a> </label>
 				</div>
-			</div>
-			<div class="col-md-4 arriv-right1">
-				<%=image_tag("4.jpg", class: "img-responsive")%>
-				<div class="arriv-info2">
-					<a href="/details"><h3>Trekking Shoes<i class="ars"></i></h3></a>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="arriv-las">
-			<div class="col-md-4 arriv-left2">
-				<%=image_tag("5.jpg", class: "img-responsive")%>
-				<div class="arriv-info2">
-					<a href="/details"><h3>Casual Glasses<i class="ars"></i></h3></a>
-				</div>
-			</div>
-			<div class="col-md-4 arriv-middle">
-				<%=image_tag("6.jpg", class: "img-responsive")%>
-				<div class="arriv-info3">
-					<h3>FRESH LOOK T-SHIRT</h3>
-					<div class="crt-btn">
-						<a href="/details">SHOP NOW</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 arriv-right2">
-				<%=image_tag("7.jpg", class: "img-responsive")%>
-				<div class="arriv-info2">
-					<a href="/details"><h3>Elegant Watches<i class="ars"></i></h3></a>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
+			</form>
+			<!-- /Form -->
 		</div>
 	</div>
+	<div class="registration_left">
+		<h2>existing user</h2>
+		 <div class="registration_form">
+		 <!-- Form -->
+			<form id="registration_form" action="contact.php" method="post">
+				<div>
+					<label>
+						<input placeholder="email:" type="email" tabindex="3" required>
+					</label>
+				</div>
+				<div>
+					<label>
+						<input placeholder="password" type="password" tabindex="4" required>
+					</label>
+				</div>						
+				<div>
+					<input type="submit" value="sign in" id="register-submit">
+				</div>
+				<div class="forget">
+					<a href="#">forgot your password</a>
+				</div>
+			</form>
+			<!-- /Form -->
+			</div>
+	</div>
+	<div class="clearfix"></div>
+	</div>
+	<!-- end registration -->
 </div>
-<div class="special">
-	<div class="container">
-		<h3>Special Offers</h3>
-		<div class="specia-top">
-			<ul class="grid_2">
-		<li>
-				<a href="/details"><%=image_tag("8.jpg", class: "img-responsive")%></a>
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h5>Lorem ipsum dolor</h5>
-					<div class="item_add"><span class="item_price"><h6>ONLY $40.00</h6></span></div>
-					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
-				</div>
-		</li>
-		<li>
-				<a href="/details"><%=image_tag("9.jpg", class: "img-responsive")%></a>
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h5>Consectetur adipis</h5>
-					<div class="item_add"><span class="item_price"><h6>ONLY $60.00</h6></span></div>
-					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
-			</div>
-		</li>
-		<li>
-				<a href="/details"><%=image_tag("10.jpg", class: "img-responsive") %></a>
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h5>Commodo consequat</h5>
-					<div class="item_add"><span class="item_price"><h6>ONLY $14.00</h6></span></div>
-					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
-			</div>
-		</li>
-		<li>
-				<a href="/details"><%=image_tag("11.jpg", class: "img-responsive") %></a>
-				<div class="special-info grid_1 simpleCart_shelfItem">
-					<h5>Voluptate velit</h5>
-					<div class="item_add"><span class="item_price"><h6>ONLY $37.00</h6></span></div>
-					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
-				</div>
-		</li>
-		<div class="clearfix"> </div>
-	</ul>
-		</div>
-	</div>
 </div>
 <div class="foot-top">
 	<div class="container">
@@ -943,13 +959,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 			<div class="clearfix"> </div>
-				<li><i class="add"> </i>Jl. India Delhi, Blok G no.69</li>
-				<li><i class="phone"> </i>000-0000000</li>
-				<li><a href="mailto:info@example.com"><i class="mail"> </i>info@zeeozoo.com </a></li>
+				<li><i class="add"> </i>Jl. Haji Muhidin, Blok G no.69</li>
+				<li><i class="phone"> </i>025-2839341</li>
+				<li><a href="mailto:info@example.com"><i class="mail"> </i>info@sitename.com </a></li>
 			
 		</div>
 		<div class="clearfix"> </div>
-			<p>Copyrights © 2015 Rk. All rights reserved | Template by <a href="#">Rk</a></p>
+			<p>Copyrights © 2015 Gretong. All rights reserved | Template by <a href="http://w3layouts.com/">W3layouts</a></p>
 	</div>
 </div>
 </body>

@@ -4,4 +4,15 @@ class WelcomeController < ApplicationController
   def index
   	
   end
+  def women
+  end
+
+  def checkout
+  end
+
+  def details
+  end
+
+  def register
+  end
 end
