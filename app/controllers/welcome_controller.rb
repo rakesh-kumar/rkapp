@@ -7,7 +7,7 @@ class WelcomeController < ApplicationController
   def women
   end
 
-  def checkout
+  def checkout1
   end
 
   def details

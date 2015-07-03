@@ -5,11 +5,24 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+scope '/welcome' do 
   get '/index'    => 'welcome#index'
-  get '/checkout' => 'welcome#checkout'
+  get '/checkout1' => 'welcome#checkout1'
   get '/details'  => 'welcome#details'
   get '/register' => 'welcome#register'
   get '/women'    => 'welcome#women'
+end
+  get "product/:permalink", to: "products#show", as: "product"
+  post "product/:permalink", to: "products#buy", as: "buy"
+  # root to: "products#index"
+  get "products/index", to: "products#index"
+  post "product/:permalink", to: "products#buy"
+  get "basket", to: "orders#show"
+  delete "basket", to: "orders#destroy"
+
+  match "checkout", to: "orders#checkout", as: "checkout", via: [:get, :patch]
+  match "checkout/pay", to: "orders#payment", as: "checkout_payment", via: [:get, :post]
+  match "checkout/confirm", to: "orders#confirmation", as: "checkout_confirmation", via: [:get, :post]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
